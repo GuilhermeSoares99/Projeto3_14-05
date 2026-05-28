@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Interativa e Responsiva - Missão Prática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Guia do HTML Semântico e Acessibilidade</h1>
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="#conceito">Conceito</a></li>
+                <li><a href="#acessibilidade">Acessibilidade</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <div class="grid-conteudo">
+            
+            <section id="conceito">
+                <h2>1. O que é HTML Semântico?</h2>
+                <p>É o uso de tags que descrevem o significado do conteúdo, e não apenas sua aparência. Elas guiam os leitores de tela e os robôs de busca.</p>
+                
+                <div class="area-interativa">
+                    <button id="btnClique">Mudar Tema do Bloco</button>
+                    <button id="btnReset">Resetar Estado</button>
+                    <p id="mensagemStatus">Aguardando interação...</p>
+                </div>
+            </section>
+
+            <section id="acessibilidade" class="bloco-efeito" id="blocoImagem">
+                <h2>3. Acessibilidade</h2>
+                <p>Passe o mouse sobre a imagem abaixo para ver uma alteração dinâmica de estilo em tempo real!</p>
+                
+                <img id="imagemInterativa" src="https://via.placeholder.com/600x300" alt="Ilustração sobre desenvolvimento web responsivo e acessível.">
+            </section>
+
+            <section id="contato">
+                <h2>5. Prática Interativa</h2>
+                <form action="#" method="POST" onsubmit="event.preventDefault();">
+                    <div>
+                        <label for="campoTexto">Validador de Nome (Digite algo):</label>
+                        <input type="text" id="campoTexto" placeholder="Comece a digitar seu nome..." required>
+                    </div>
+                    
+                    <p id="ecoTeclado" class="feedback-caixa"></p>
+
+                    <button type="submit" id="btnEnviar">Enviar Inscrição</button>
+                </form>
+            </section>
